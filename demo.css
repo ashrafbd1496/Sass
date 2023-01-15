@@ -1,0 +1,30 @@
+body {
+    /* 1fr = 33.33% */
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+    background-color: aquamarine;
+}
+
+header,
+main,
+footer,
+div {
+    padding: 1.2em;
+    height: 10vh;
+}
+
+#header {
+    grid-area: header;
+    background: gold;
+}
+
+#footer {
+    grid-area: footer;
+    background: rgb(35, 144, 100);
+}
+
+#main {
+    grid-area: article;
+    background: rgb(217, 9, 182);
+}

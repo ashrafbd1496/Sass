@@ -1,0 +1,13 @@
+// sass variables
+$header-bgcolor: #38aaa4;
+$header-text-color: #ffffff;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: $header-bgcolor;
+    color: $header-text-color;
+}

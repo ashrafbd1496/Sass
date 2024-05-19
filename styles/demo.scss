@@ -1,13 +1,66 @@
 // sass variables
+//colors
 $header-bgcolor: #38aaa4;
 $header-text-color: #ffffff;
+$body-color: rgb(226, 226, 226);
+$text-color: red;
+$h1-color: teal;
+$h2-color: violet;
+$h3-color: rgb(6, 226, 79);
+$h4-color: blue;
+$p-color: #333;
+
+//font-sizes
+$h1-fs: 20px;
+$h2-fs: 18px;
+$h3-fs: 16px;
+$h4-fs: 14px;
+$p-fs: 14px;
+
+//width-padding-margin
+$width: 500px;
+$padding: 20px;
+$margin: 20px;
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header {
-    background-color: $header-bgcolor;
-    color: $header-text-color;
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $body-color;
+  text-align: center;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  overflow: hidden;
+  width: $width;
+  border: 1px dashed;
+  padding: $padding;
+  margin: $margin;
+}
+h1 {
+  color: $h1-color;
+  font-size: $h1-fs;
+}
+h2 {
+  color: $h2-color;
+}
+h3 {
+  color: $h3-color;
+}
+h4 {
+  color: $h4-color;
+}
+p {
+  padding: $padding;
+  color: $p-color;
+  font-size: $p-fs;
 }

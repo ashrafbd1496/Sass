@@ -45,8 +45,9 @@
       padding: 6px 12px;
       text-decoration: none;
     }
+    }
 
-}
+
 #Partials
     // _base.sass
     $font-stack: Helvetica, sans-serif

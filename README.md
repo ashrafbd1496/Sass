@@ -1,9 +1,10 @@
 # Sass Nesting
 
-.container {
-display: flex;
-.content {
-text-align: center;
+    .container {
+    display: flex;
+
+    .content {
+    text-align: center;
 
     h1 {
       font-size: 2em;

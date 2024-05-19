@@ -17,7 +17,7 @@ header,
 main,
 footer {
   overflow: hidden;
-  width: 500px;
+  width: 600px;
   border: 1px dashed;
   padding: 20px;
   margin: 20px;
@@ -44,4 +44,14 @@ p {
   padding: 20px;
   color: #333;
   font-size: 14px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(223, 15, 223);
+}
+header a:hover {
+  color: rgb(207, 82, 207);
+  border: 1px solid;
+  padding: 5px;
 }/*# sourceMappingURL=demo.css.map */

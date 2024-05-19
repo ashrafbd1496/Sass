@@ -48,7 +48,7 @@
     }
 
 
-#Partials
+# Partials
     // _base.sass
     $font-stack: Helvetica, sans-serif
     $primary-color: #333

@@ -1,3 +1,8 @@
+# Notes:
+
+    (Guide): [https://sass-lang.com/guide/]
+    Scss and Sass has little difference. .scss file extension wirtes followng css style like Braces '{}' and Semicolons ';' but .sass file did not use Braces '{}' and Semicolons ';' end of the line.
+
 # Sass Nesting
 
     .container {
@@ -47,8 +52,8 @@
     }
     }
 
-
 # Partials
+
     // _base.sass
     $font-stack: Helvetica, sans-serif
     $primary-color: #333
@@ -64,11 +69,8 @@
         background-color: base.$primary-color
         color: white
 
-    SCSS
-    Sass
-    CSS
-
 # Mixin
+
     @mixin theme($theme: DarkGray)
       background: $theme
       box-shadow: 0 0 1px rgba($theme, .25)
@@ -82,5 +84,3 @@
 
     .success
       @include theme($theme: DarkGreen)
-
-

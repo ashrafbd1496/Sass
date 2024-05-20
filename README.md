@@ -1,86 +1,52 @@
-# Notes:
+<h1 align="center">
+  Sass Practice , folders and files organization
+</h1>
 
-    (Guide): [https://sass-lang.com/guide/]
-    Scss and Sass has little difference. .scss file extension wirtes followng css style like Braces '{}' and Semicolons ';' but .sass file did not use Braces '{}' and Semicolons ';' end of the line.
+_Just an example/recommendation of how to organize sass files_
 
-# Sass Nesting
+[Here you can check out the demo](https://lariicsa.github.io/sass-base-template/)
 
-    .container {
-    display: flex;
+## Table of Contents
 
-    .content {
-    text-align: center;
+1. [Base Estructure](#Base-Estructure)
+2. [📄Index File](#Index-File)
+3. [📂Components](src/SCSS/components)
+4. [📄Footer](src/SCSS/components/footer.scss)
+   1. [📄Using SVG Images from Mixins](src/SCSS/components/callingSVGimages.md)
+5. [📄Header](src/SCSS/components/header.scss)
+6. [📂Shared](src/SCSS/shared)
+7. [📄mixins](src/SCSS/shared/_mixins.scss)
+8. [📄variables](src/SCSS/shared/_variables.scss)
+9. [📄global](src/SCSS/shared/global.scss)
+10. [📄normalize](src/SCSS/shared/normalize.scss)
 
-    h1 {
-      font-size: 2em;
-      color: $primary-color;
-    }
+## Base Estructure
 
-    p {
-      font-size: 1em;
-      color: $secondary-color;
-    }
+    .
+    ├── src
+      ├── SCSS
+        ├── components
+          ├── header.scss
+          ├── footer.scss
+        ├── shared
+          ├── _mixins.scss
+          ├── _variables.scss
+          ├── global.scss
+          ├── index.scss
+          ├── normalize.scss
 
-    a {
-      text-decoration: none;
-      color: $link-color;
+## Index File
 
-      &:hover {
-        color: $link-hover-color;
-      }
-      &:nth-child(1){ ... }
-    }
+_This file contains general imports of main files_
 
-}
-}
+```css
+@import "global/normalize.scss";
+@import "global/shared.scss";
+@import "components/about.scss";
+@import "components/cards.scss";
+.
+.
+.
+```
 
-# Menu Nesting
-
-    nav {
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    li { display: inline-block; }
-
-    a {
-      display: block;
-      padding: 6px 12px;
-      text-decoration: none;
-    }
-    }
-
-# Partials
-
-    // _base.sass
-    $font-stack: Helvetica, sans-serif
-    $primary-color: #333
-
-    body
-      font: 100% $font-stack
-      color: $primary-color
-
-      // styles.sass
-      @use 'base'
-
-      .inverse
-        background-color: base.$primary-color
-        color: white
-
-# Mixin
-
-    @mixin theme($theme: DarkGray)
-      background: $theme
-      box-shadow: 0 0 1px rgba($theme, .25)
-      color: #fff
-
-    .info
-      @include theme
-
-    .alert
-      @include theme($theme: DarkRed)
-
-    .success
-      @include theme($theme: DarkGreen)
+[Check the .index.scss file](src/SCSS/index.scss)

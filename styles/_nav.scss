@@ -1,0 +1,22 @@
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: rgb(0, 128, 96);
+    &:hover {
+      transition: all 0.3s ease-out;
+      transform: scale(1.2);
+    }
+  }
+}

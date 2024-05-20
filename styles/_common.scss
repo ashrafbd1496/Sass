@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  overflow: hidden;
+  width: $width;
+  border: 1px dashed;
+  padding: $padding;
+  margin: $margin;
+}

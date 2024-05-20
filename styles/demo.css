@@ -1,17 +1,23 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 #container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(226, 226, 226);
+  background-color: #e2e2e2;
+  padding-top: 50px;
   text-align: center;
-  align-items: center;
-}
+  align-items: center; }
+  #container h1 {
+    border-bottom: 1px solid; }
+  #container main a {
+    text-decoration: none; }
+  #container main button {
+    background-color: #195858;
+    padding: 5px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 header,
 main,
@@ -20,38 +26,39 @@ footer {
   width: 600px;
   border: 1px dashed;
   padding: 20px;
-  margin: 20px;
-}
+  margin: 20px; }
 
 h1 {
   color: teal;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 h2 {
-  color: violet;
-}
+  color: violet; }
 
 h3 {
-  color: rgb(6, 226, 79);
-}
+  color: #06e24f; }
 
 h4 {
-  color: blue;
-}
+  color: blue; }
 
 p {
   padding: 20px;
   color: #333;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
-header a {
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+header nav li {
+  display: inline-block; }
+header nav a {
+  display: block;
+  padding: 6px 12px;
   text-decoration: none;
-  color: rgb(223, 15, 223);
-}
-header a:hover {
-  color: rgb(207, 82, 207);
-  border: 1px solid;
-  padding: 5px;
-}/*# sourceMappingURL=demo.css.map */
+  color: #008060; }
+  header nav a:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.2); }
+
+/*# sourceMappingURL=demo.css.map */

@@ -1,3 +1,8 @@
+#container main p {
+  padding: 20px;
+  color: #333;
+  font-size: 14px; }
+
 #container {
   display: flex;
   justify-content: center;
@@ -8,6 +13,20 @@
   align-items: center; }
   #container h1 {
     border-bottom: 1px dashed; }
+  #container header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  #container header nav li {
+    display: inline-block; }
+  #container header nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #008060; }
+    #container header nav a:hover {
+      transition: all 0.3s ease-out;
+      transform: scale(1.2); }
   #container main img {
     display: block;
     width: 100%;
@@ -47,26 +66,6 @@ h3 {
 
 h4 {
   color: blue; }
-
-p {
-  padding: 20px;
-  color: #333;
-  font-size: 14px; }
-
-header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-header nav li {
-  display: inline-block; }
-header nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
-  color: #008060; }
-  header nav a:hover {
-    transition: all 0.3s ease-out;
-    transform: scale(1.2); }
 
 footer {
   display: flex;

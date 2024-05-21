@@ -24,6 +24,13 @@ $width: 600px;
 $padding: 20px;
 $margin: 20px;
 
+//extend created
+%p {
+  padding: $padding;
+  color: $p-color;
+  font-size: $p-fs;
+}
+
 #container {
   display: flex;
   justify-content: center;
@@ -32,12 +39,22 @@ $margin: 20px;
   padding-top: 50px;
   text-align: center;
   align-items: center;
-  
+
   @mixin header-border {
     border-bottom: 1px dashed;
   }
   h1 {
     @include header-border;
+  }
+  header {
+    @import "nav";
+  }
+  
+  p {
+  }
+  img {
+  }
+  button {
   }
 
   @mixin main-style {
@@ -63,6 +80,10 @@ $margin: 20px;
   }
   main {
     //@include main-style;
+    p{
+      //extent p style
+      @extend %p
+    }
     img {
       @include image-style;
     }
@@ -90,20 +111,7 @@ h3 {
 h4 {
   color: $h4-color;
 }
-p {
-  padding: $padding;
-  color: $p-color;
-  font-size: $p-fs;
-}
 
-header {
-  @import "nav";
-}
 
-p {
-}
-img {
-}
-button {
-}
+
 @import "footer";

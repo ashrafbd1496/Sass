@@ -4,7 +4,7 @@
 
 _Just an example/recommendation of how to organize sass files_
 
-[Here you can check out the demo](https://lariicsa.github.io/sass-base-template/)
+[Here you can check out the demo](https://ashrafbd1496.github.io/)
 
 ## Table of Contents
 
@@ -23,10 +23,10 @@ _Just an example/recommendation of how to organize sass files_
 ## Base Estructure
 
     .
-    ├── src
-      ├── SCSS
+    ├── SASS
+      ├── styles
         ├── components
-          ├── header.scss
+          ├── demo.scss
           ├── footer.scss
         ├── shared
           ├── _mixins.scss

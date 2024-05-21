@@ -32,17 +32,45 @@ $margin: 20px;
   padding-top: 50px;
   text-align: center;
   align-items: center;
+  
+  @mixin header-border {
+    border-bottom: 1px dashed;
+  }
   h1 {
-    border-bottom: 1px solid;
+    @include header-border;
   }
 
+  @mixin main-style {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-center;
+  }
+  @mixin link-style {
+    text-decoration: none;
+    float: left;
+    border: 1px dashed;
+    padding: 5px;
+  }
+  @mixin image-style {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @mixin button-style {
+    padding: 5px;
+    float: right;
+  }
   main {
+    //@include main-style;
+    img {
+      @include image-style;
+    }
     a {
-      text-decoration: none;
+      @include link-style;
     }
     button {
-      background-color: rgb(25, 88, 88);
-      padding: 5px;
+      @include button-style;
     }
   }
 }
@@ -78,3 +106,4 @@ img {
 }
 button {
 }
+@import "footer";

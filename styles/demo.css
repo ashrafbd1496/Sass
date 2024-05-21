@@ -7,12 +7,19 @@
   text-align: center;
   align-items: center; }
   #container h1 {
-    border-bottom: 1px solid; }
+    border-bottom: 1px dashed; }
+  #container main img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; }
   #container main a {
-    text-decoration: none; }
-  #container main button {
-    background-color: #195858;
+    text-decoration: none;
+    float: left;
+    border: 1px dashed;
     padding: 5px; }
+  #container main button {
+    padding: 5px;
+    float: right; }
 
 * {
   padding: 0;
@@ -60,5 +67,13 @@ header nav a {
   header nav a:hover {
     transition: all 0.3s ease-out;
     transform: scale(1.2); }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  footer img {
+    width: 50px;
+    height: auto; }
 
 /*# sourceMappingURL=demo.css.map */

@@ -24,11 +24,35 @@ $width: 600px;
 $padding: 20px;
 $margin: 20px;
 
+//Sass Operator
+
+//conditional sass
+@mixin responsive($value) {
+  @if $value == small {
+    @media (max-width: 768px) {
+      font-size: 12px;
+      color: #38aaa4;
+    }
+  } @else if $value == medium {
+    @media (max-width: 960px) {
+      font-size: 16px;
+      color: azure;
+    }
+  } @else if $value == large {
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      color: chocolate;
+    }
+  } @else {
+    font-size: inherit;
+  }
+}
+
 //extend created
 %p {
   padding: $padding;
   color: $p-color;
-  font-size: $p-fs;
+  @include responsive(small);
 }
 
 #container {
@@ -49,7 +73,7 @@ $margin: 20px;
   header {
     @import "nav";
   }
-  
+
   p {
   }
   img {
@@ -80,15 +104,16 @@ $margin: 20px;
   }
   main {
     //@include main-style;
-    p{
+    p {
       //extent p style
-      @extend %p
+      @extend %p;
     }
     img {
       @include image-style;
     }
     a {
       @include link-style;
+      @include responsive(small);
     }
     button {
       @include button-style;
@@ -111,7 +136,5 @@ h3 {
 h4 {
   color: $h4-color;
 }
-
-
 
 @import "footer";
